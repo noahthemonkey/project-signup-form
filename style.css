@@ -6,7 +6,7 @@
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
+del, dfn, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
@@ -48,7 +48,12 @@ table {
 }
 
 /* ------------------------------------------------------------------------ */
+
+html {
+    background-color: rgb(35, 35, 35);
+}
 body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
     display: flex;
     justify-content: center;
@@ -58,8 +63,8 @@ body {
 #main-container {
     display: flex;
     height: 100%;
-    width: 1500px;
-    background-color: rgb(108, 108, 108);
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
 }
 
 #img-container {
@@ -67,28 +72,75 @@ body {
 }
 
 #forest {
-    width: 30vw;
+    width: 100%;
     height: 100vh;
+    object-fit: cover;
     
 }
 
 form {
-    padding: 50px;
-    display: flex;
+    margin: 3vw;
+    position: relative;
+    box-sizing: border-box;
     width: 600px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+
 
 }
 
 h1 {
-    font-size: 28px;
-    
+    letter-spacing: .1rem;
+    line-height: 1.3;
+    font-size: 24px;
+    display: inline-block;
 }
 
 legend {
+    letter-spacing: .1rem;
+    margin-top: 30px;
+    margin-bottom: 20px;
     font-size: 18px;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    
+}
+
+#fill {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10vh   ;
+}
+fieldset {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+input {
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    margin-top: 0.3rem;
+    
+    
+}
+input:focus {
+    outline-color: rgb(85, 85, 172);
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: rgb(60, 60, 60);
+    letter-spacing: .2rem;
+}
+textarea {
+    
+    border: none;
+    font-size: 1rem;
+    background: none;
+    width: 50%;
+    
     
 }
