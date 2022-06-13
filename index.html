@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <style>@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');</style>
     <title>Sign Up</title>
 </head>
@@ -19,7 +19,7 @@
             
         </div>
         
-    <form action="" method="post">
+    <form action="#" method="get">
         <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started. <br> <br> You <em>know</em> you want to.</h1>
         <legend> <br> Let's do this! <br> <br> 
         <div id="fill">            
@@ -34,24 +34,25 @@
         </fieldset>
         
         <fieldset>
-            <label for="email">EMAIL:</label>
-            <input type="email" id="email">
+            <label for="email">*EMAIL:</label>
+            <input type="email" id="user_email" name="email" required>
 
         </fieldset>
 
         <fieldset>
-            <label for="phoneNumber">PHONE NUMBER:</label>
-            <input type="numbers" id="phoneNumber">
+            <label for="phone">PHONE NUMBER:</label>
+            <input type="tel" id="phone" name="phone"
+            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-123-1234">
         </fieldset>
         
         <fieldset>
-            <label for="password">PASSWORD:</label>
-            <input type="password" id="password">
+            <label for="password">*PASSWORD:</label>
+            <input type="password" id="password" class="error" required>
         </fieldset>
         
         <fieldset>
-            <label for="confirmPassword">CONFIRM PASSWORD:</label>
-            <input type="password" id="password">
+            <label for="password">CONFIRM PASSWORD:</label>
+            <input type="password" id="confirm_password" class="error" required>
         </fieldset>
         
         <fieldset>
