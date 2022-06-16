@@ -77,7 +77,6 @@ body {
     position: relative;
     width: 50%;
     max-width: 450px;
-    
 }
 
 #forest {
@@ -108,6 +107,27 @@ p {
 }
 #logoImg {
     width: 23%;
+}
+
+#photoCredit {
+    color: white;
+    position: relative;
+    bottom: 35px;
+    height: 16px;
+}
+#jpPhoto {
+    position: relative;
+    bottom: 50px;
+    left: 600px;
+    height: 16px;
+}
+#jpPhoto, #photoCredit {
+    text-shadow: 1px 1px black;
+    color: rgba(255, 255, 255, 0.675);
+}
+
+a {
+    color: rgba(99, 162, 217, 0.553);
 }
 
 form {
@@ -155,10 +175,23 @@ input {
     height: 2rem;
     background-color: rgba(190, 201, 210, 0.266);
 }
-input:invalid{
-    border: 20px;
-    border-color: red;
+label.error{
+    color: rgba(100, 0, 0, 0.900);
+}
+input:invalid {
+    border: 1px solid rgba(100, 0, 0, 0.900);
+}
 
+input:valid {
+    border:  1px solid rgba(99, 162, 217, 0.553);
+}
+
+#errormsg{
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.531);
+    margin-top: 10px;
+    font-size: 16px;
+    min-height: 16px;
+    color: rgba(99, 162, 217, 0.553);
 }
 
 input:focus {
@@ -189,4 +222,12 @@ button {
     background-color: rgba(99, 162, 217, 0.553);
     height: 5vh;
     border-radius: 2vh;
+    
+}
+#account {
+    color: rgb(175, 175, 175);
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.571);
+    font-size: 16px;
+    grid-column: 1 / span 2;
+    margin-bottom: 100px;
 }

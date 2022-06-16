@@ -16,7 +16,8 @@
         <div id="img-container">
             <img id="forest" src="paul-pastourmatzis-OZdKEwDXXJU-unsplash.jpg" alt="Misty Forest">
             <p id="logo"><img id="logoImg" src="PngItem_6335619.png" alt="Raven logo">ODIN</p>
-            
+        <p id="photoCredit">Photo by&nbsp;<a href="https://unsplash.com/photos/OZdKEwDXXJU"> Paul Pastourmatizis</a>&nbsp;on&nbsp;<a href="https://unsplash.com/"> Unsplash</a></p>
+        <p id="jpPhoto">Photo by&nbsp;<a href="https://unsplash.com/photos/EAx4OpPCSrs">Jp Valery</a>&nbsp; on &nbsp; <a href="https://unsplash.com/"> Unsplash</a></p>
         </div>
         
     <form action="#" method="get">
@@ -24,44 +25,50 @@
         <legend> <br> Let's do this! <br> <br> 
         <div id="fill">            
             <fieldset>
-            <label for="firstName">FIRST NAME:</label>
-            <input type="text" id="firstName" placeholder="James...">
+            <label for="firstName">*FIRST NAME:</label>
+            <input type="text" id="firstName" placeholder="James..." required>
         </fieldset>
 
         <fieldset>
-            <label for="lastName">LAST NAME:</label>
-            <input type="text" id="LastName" placeholder="Jameson...">
+            <label for="lastName">*LAST NAME:</label>
+            <input type="text" id="LastName" placeholder="Jameson..." required>
         </fieldset>
         
         <fieldset>
             <label for="email">*EMAIL:</label>
-            <input type="email" id="user_email" name="email" required>
+            <input type="email" id="user_email" name="email" required >
 
         </fieldset>
 
         <fieldset>
-            <label for="phone">PHONE NUMBER:</label>
+            <label for="phone">*PHONE NUMBER:</label>
             <input type="tel" id="phone" name="phone"
-            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-123-1234">
+            pattern="[0-9]{9}" placeholder="123456789" required>
         </fieldset>
         
         <fieldset>
-            <label for="password">*PASSWORD:</label>
-            <input type="password" id="password" class="error" required>
+            <label for="password" id="passwordLabel" >*PASSWORD:</label>
+            <input type="password" id="password" required>
         </fieldset>
         
         <fieldset>
-            <label for="password">CONFIRM PASSWORD:</label>
-            <input type="password" id="confirm_password" class="error" required>
+            <label for="password" id="confirmLabel" >CONFIRM PASSWORD:</label>
+            <input type="password" id="confirm_password" required>
+            <div id="errormsg"></div>
         </fieldset>
         
         <fieldset>
             <button type="submit">Create Account</button>
         </fieldset>
+        <div id="account">Already have an account?&nbsp;<a href="">Log in</a></div>
     </div>
-    </legend>
+
+
     </form>
 
+
 </div> 
+
+</legend>
 </body>
 </html>
